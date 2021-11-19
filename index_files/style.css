@@ -1,0 +1,36 @@
+#main {
+    text-align: center;line-height:50px;
+}
+
+
+#cat {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin: auto;
+    width: 20%;
+}
+
+#water {
+    animation-name: stretch;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease;
+}
+  
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes stretch {
+    0%      {width:80px;}
+    50%     {width:300px;}
+    100%    {width:80px;}
+}
